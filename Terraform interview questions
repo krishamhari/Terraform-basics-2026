@@ -1,0 +1,30 @@
+1. What is Terraform?
+Ans: Terrafrom is an Infrastructure as Code tool used to create, updated, destroy and manage the infrastructure automatically using configuration files. 
+Example: Instea of creating an EC2 instance manually in AWS console, using terraform code we can create it automatically by using run terraform apply 
+
+2. What is Infrastructure as Code (IaC)?
+Ans: IaC meaning manage the infrastructure using terraform code instead of creating it manually.
+Example: Instea of creating VPC, EC2, s3 in AWS console, deploy the infrastructure automatically by using the terraform files with the help of running 
+terrafrom apply command. 
+
+3. What is Infrastructure as Code (IaC)?
+Ans: 
+terraform init - initialize terraform and download provides plugin
+terraform validate - checks configuration syntax
+terraform plan - what changes terraform will make
+terraform apply - create/update infrastructure
+terraform destroy - destroy infrastructure
+
+4. What is terraform init?
+Ans: terraform init is mean by initializing terraform project by downloading providers plugin and setting up backend configuration. 
+Example: If the code uses AWS resources, terraform will download AWS plugin and settting up s3 configuration to store state files.
+
+5. What is a Terraform Provider?
+Ans: Provider is a plugin that helps terraform to interacts with the cloud/platform services like  AWS, Azure, GCP, K8s ot github.
+Example: If you want to create a EC2, s3, VPC in the AWS, AWS provider is needed for terraform to interact. 
+
+6. What is a Resource in Terraform?
+Ans: Resource is a component object that terraform to create and manages.
+Example: VPC, Ec2, s3 is a resrouces component created by terraform.
+
+7. 
