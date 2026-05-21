@@ -7,7 +7,7 @@ Ans: IaC meaning manage the infrastructure using terraform code instead of creat
 Example: Instea of creating VPC, EC2, s3 in AWS console, deploy the infrastructure automatically by using the terraform files with the help of running 
 terrafrom apply command. 
 
-3. What is Infrastructure as Code (IaC)?
+3. What are the main Terraform commands?
 Ans: 
 terraform init - initialize terraform and download provides plugin
 terraform validate - checks configuration syntax
@@ -27,4 +27,17 @@ Example: If you want to create a EC2, s3, VPC in the AWS, AWS provider is needed
 Ans: Resource is a component object that terraform to create and manages.
 Example: VPC, Ec2, s3 is a resrouces component created by terraform.
 
-7. 
+7. What is the difference between Provider and Resource in Terraform?
+Ans: Provider is a plugin which helps terraform to interact with cloud platforms, Resource is the actual infrastructure created inside that platform.
+Example: 
+AWS Cloud is a provider plugin 
+EC2, s3, VPC are resoruces created inside the AWS.
+
+8. What is the Terraform workflow/lifecycle?
+Ans: 
+Terraform lifecycle is the below one
+terraform init - initialize terraform project and download provider plugin
+terraform validate - check configuration syntax
+terraform plan - checks the changes what terraform going to make
+terraform apply - create the infrastructure
+terraform destroy when we wants to delete the resoruce which we created
