@@ -41,3 +41,16 @@ terraform validate - check configuration syntax
 terraform plan - checks the changes what terraform going to make
 terraform apply - create the infrastructure
 terraform destroy when we wants to delete the resoruce which we created
+
+9. What is the difference between terraform validate and terraform plan?
+Ans:
+terraform validate - checks the syntax in the configuration files
+terraform plan - check the infrastructure changes what terraform will make
+
+10. What is Terraform State File (terraform.tfstate)?
+Ans:
+terraform state file stores the current status of the infrastructure created by terraform.
+Example: If ec2 is created with instance type t2 micro for the existing t2 medium ec2. 
+Here the state will be updated with the changes.
+
+11. 
